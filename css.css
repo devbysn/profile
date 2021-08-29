@@ -84,6 +84,8 @@ body {
 .right .image {
   height: 70vh;
   opacity: 0.5;
+  border: 0px solid rgb(233, 225, 225);
+  border-radius: 100%;
 }
 
 .footer {
@@ -139,8 +141,9 @@ body {
 
 .wrapper {
   animation: scroll 70s linear infinite;
-  background: url("./assets/preview-BinaryNumbers1AlphaMatteVidevo.jpg");),
-    #111111;
+  background: url("./assets/preview-BinaryNumbers1AlphaMatteVidevo.jpg")
+    rgb(0, 0, 0);
+
   color: #eee;
   height: 100vh;
   min-width: 360px;
@@ -148,8 +151,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
 }
 
 @keyframes scroll {
