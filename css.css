@@ -141,8 +141,8 @@ body {
 
 .wrapper {
   animation: scroll 70s linear infinite;
-  background: url("./assets/preview-BinaryNumbers1AlphaMatteVidevo.jpg")
-    rgb(0, 0, 0);
+  /* background: url("./assets/preview-BinaryNumbers1AlphaMatteVidevo.jpg")
+      rgb(0, 0, 0); */
 
   color: #eee;
   height: 100vh;
