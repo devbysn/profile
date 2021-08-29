@@ -1,14 +1,17 @@
 @font-face {
   font-family: Hacked-KerX;
-  src: url("/assets//hacked-font/Hacked-KerX.ttf");
+  src: url("/assets/hacked-font/Hacked-KerX.ttf");
 }
+
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"); */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Hacked-KerX, "Courier New", Courier, monospace;
-  letter-spacing: 7px;
+  /* font-family: Hacked-KerX, "Courier New", Courier, monospace; */
+  font-family: Hacked-KerX, "IBM Plex Mono", monospace;
+  /* letter-spacing: 7px; */
 }
 
 * ::selection {
@@ -23,6 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-image: url("/assets/preview-BinaryNumbers1AlphaMatteVidevo.jpg"); */
 }
 
 .main {
@@ -33,7 +37,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 6px solid rgb(36, 36, 36);
+  border: 6px solid rgb(233, 225, 225);
   border-radius: 2px;
   /* align-content: space-around; */
 }
@@ -52,11 +56,11 @@ body {
 
 .left h2 {
   font-weight: 100;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .left h1 {
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: rgb(74, 206, 30);
 }
 
@@ -78,7 +82,7 @@ body {
 }
 
 .right .image {
-  height: 60vh;
+  height: 70vh;
   opacity: 0.5;
 }
 
@@ -125,5 +129,43 @@ body {
 
   .hidden {
     display: block;
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  animation: scroll 70s linear infinite;
+  background: url("./assets/preview-BinaryNumbers1AlphaMatteVidevo.jpg");),
+    #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
   }
 }
