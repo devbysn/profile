@@ -10,7 +10,7 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: Hacked-KerX, "Courier New", Courier, monospace; */
-  font-family: "VT323", monospace; /* letter-spacing: 7px; */
+  font-family: Hacked-KerX, "VT323", monospace; /* letter-spacing: 7px; */
 }
 
 * ::selection {
